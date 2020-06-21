@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Twitter DM - アダルト訴求
+Route::get('adult', 'AdController@os');
