@@ -13,3 +13,6 @@
 
 // Twitter DM - アダルト訴求
 Route::get('adult', 'AdController@os');
+
+// instagram - アダルト訴求
+Route::get('instagram', 'AdController@instagram');

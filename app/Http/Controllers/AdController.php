@@ -15,4 +15,14 @@ class AdController extends Controller
         // return redirect('https://fam-ad.com/ad/p/r?_site=64801&_article=16216'); //トリトモ - fam
         return redirect('https://www.gamefeat.net/webapi/v1/reportClick?ad_id=8035&site_id=27669'); //イククル - GameFeat
     }
+    
+    //
+    public function instagram(Request $request) {
+        $user_agent =  $request->header('User-Agent');
+        if ((strpos($user_agent, 'iPhone') !== false)) {
+            return redirect('https://preaf.jp/pa.do?s=v04380&o=45765&guid=ON'); //トークウィズ(計測分割用) - preaf    
+        }
+        // return redirect('https://fam-ad.com/ad/p/r?_site=64801&_article=16216'); //トリトモ - fam
+        return redirect('https://www.gamefeat.net/webapi/v1/reportClick?ad_id=8035&site_id=27669'); //イククル - GameFeat
+    }
 }
