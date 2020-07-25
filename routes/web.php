@@ -11,8 +11,9 @@
 |
 */
 
-// Twitter DM - アダルト訴求
-Route::get('adult', 'AdController@os');
+// TwitterDM - アダルト訴求
+Route::get('app', 'AdController@os');
 
+// 停止中↓
 // instagram - アダルト訴求
-Route::get('instagram', 'AdController@instagram');
+// Route::get('instagram', 'AdController@instagram');
